@@ -1,6 +1,6 @@
 #import "../template/lib.typ": *
 
-#let cv = cv.with(
+#let cv = cv-template.with(
 	dark-mode: true
 )
 

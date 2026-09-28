@@ -1,4 +1,4 @@
-#let cv(
+#let cv-template(
 	dark-mode: true,
 	doc,
 ) = {
