@@ -1,6 +1,6 @@
 #import "../template/lib.typ": *
 
-#show: conf
+#show: cv
 
 = this is a header text
 

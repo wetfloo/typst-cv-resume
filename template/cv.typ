@@ -1,4 +1,4 @@
-#let conf(
+#let cv(
 	dark_mode: true,
 	doc,
 ) = {
