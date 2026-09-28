@@ -1,1 +1,2 @@
-#import "./conf.typ": *
+// Re-exports for the external files to use.
+#import "./cv.typ": *
