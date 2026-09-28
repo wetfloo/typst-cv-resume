@@ -1,8 +1,10 @@
 #let template(
-	bg: fuchsia,
-	fg: lime,
+	bg: none,
+	fg: none,
 	content,
 ) = {
+	assert.eq(type(bg), color)
+
 	set page(
 		paper: "a4",
 		fill: bg,

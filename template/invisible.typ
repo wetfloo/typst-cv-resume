@@ -1,20 +1,20 @@
 #let invisible-text(
-	bg: fuchsia,
+	bg: none,
 	debug: false,
 	content,
 ) = {
-	set text(
-		fill: bg,
-		size: 1pt,
-	)
-
-	if debug {
-		set text(
+	let style = if debug {
+		text.with(
 			fill: red,
-			size: auto,
+		)
+	} else {
+		text.with(
+			fill: bg,
+			size: 1pt,
 		)
 	}
 
+	show: style
+
 	content
 }
-

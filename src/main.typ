@@ -9,4 +9,4 @@
 
 = this is a header text
 
-this is some content with (#entrypoint.invisible-text)([invisible text])
+this is some content with #entrypoint.at("invisible-text")()[invisible text]
