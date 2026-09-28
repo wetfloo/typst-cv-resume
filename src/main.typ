@@ -1,4 +1,4 @@
-#import "../src/lib.typ": *
+#import "../template/lib.typ": *
 
 #show: conf
 
