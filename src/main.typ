@@ -1,14 +1,5 @@
-#set text(font: "Publico Text")
+#import "conf.typ": conf
 
-#let template(dark_mode: true) = {
-	if dark_mode [
-		bravo six, going dark
-	]
-	else [
-		blind me
-	]
-}
+= this is a header text
 
-= Header
-
-#template()
+test
