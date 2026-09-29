@@ -1,5 +1,5 @@
-#import "./node.typ": invisible-text
-#import "./template.typ": template
+#import "./node.typ": *
+#import "./template.typ": *
 
 #let entrypoint(
 	dark-mode: true,
