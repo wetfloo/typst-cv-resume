@@ -7,6 +7,11 @@
 
 #show: entrypoint.template
 
+#entrypoint.at("contact-items")(
+	(text: "GitHub", url: "https://github.com/wetfloo"),
+	(text: "Modworkshop", url: "https://modworkshop.net/user/inertia"),
+)
+
 = this is a header text
 
 this is some content with #entrypoint.at("invisible-text")()[invisible text]
