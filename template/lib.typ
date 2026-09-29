@@ -1,4 +1,4 @@
-#import "./invisible.typ": invisible-text
+#import "./node.typ": invisible-text
 #import "./template.typ": template
 
 #let entrypoint(
