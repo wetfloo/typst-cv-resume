@@ -8,6 +8,10 @@
 	set page(
 		paper: "a4",
 		fill: bg,
+		margin: (
+			x: 1.2cm,
+			y: 0.5cm,
+		),
 	)
 	set text(
 		font: "Iosevka",
