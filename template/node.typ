@@ -1,7 +1,18 @@
 #let contact-items(
 	separator: " :: ",
+	align-direction: right,
+	link-underline: true,
 	..pairs,
 ) = {
+	set align(align-direction)
+	let link-style = if link-underline {
+		underline
+	} else {
+		text
+	}
+
+	show link: link-style
+
 	pairs
 		.pos()
 		.map(
