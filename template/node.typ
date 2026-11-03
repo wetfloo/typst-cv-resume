@@ -11,10 +11,6 @@
 		weight: "regular",
 	)
 
-	set block(
-		spacing: 1.3em,
-	)
-
 	set align(align-direction)
 
 	let link-style = if link-underline {
