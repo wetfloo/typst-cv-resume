@@ -30,7 +30,6 @@
 				size: 20pt,
 				style: "normal",
 				weight: "bold",
-				spacing: 130%,
 			)
 
 			content
@@ -44,7 +43,6 @@
 				size: 11pt,
 				style: "normal",
 				weight: "semibold",
-				spacing: 120%,
 			)
 
 			upper(content)
