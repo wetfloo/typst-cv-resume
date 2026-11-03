@@ -4,13 +4,24 @@
 	link-underline: true,
 	..pairs,
 ) = {
+	set text(
+		font: "Avenir Next",
+		size: 8pt,
+		style: "normal",
+		weight: "regular",
+	)
+
+	set block(
+		spacing: 1.3em,
+	)
+
 	set align(align-direction)
+
 	let link-style = if link-underline {
 		underline
 	} else {
 		text
 	}
-
 	show link: link-style
 
 	pairs
