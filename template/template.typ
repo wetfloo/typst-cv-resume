@@ -23,9 +23,9 @@
 	)
 
 	show heading
-		.where(level: 1): content => [
-			#set align(center)
-			#set text(
+		.where(level: 1): content => {
+			set align(center)
+			set text(
 				font: "Publico Headline",
 				size: 20pt,
 				style: "normal",
@@ -33,13 +33,13 @@
 				spacing: 130%,
 			)
 
-			#content
-		]
+			content
+		}
 
 	show heading
-		.where(level: 2): content => [
-			#set align(start)
-			#set text(
+		.where(level: 2): content => {
+			set align(start)
+			set text(
 				font: "Avenir Next",
 				size: 11pt,
 				style: "normal",
@@ -47,8 +47,8 @@
 				spacing: 120%,
 			)
 
-			#upper(content)
-		]
+			upper(content)
+		}
 
 	set par(
 		justify: true,
