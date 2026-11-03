@@ -22,6 +22,8 @@
 		fill: fg,
 	)
 
+	show link: underline
+
 	let lvl-1-heading-counter = counter("lvl-1-heading")
 	show heading
 		.where(level: 1): content => {
