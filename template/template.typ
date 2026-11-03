@@ -13,13 +13,15 @@
 			y: 0.5cm,
 		),
 	)
+
 	set text(
-		font: "Iosevka",
+		font: "Publico Text",
 		size: 10pt,
 		style: "normal",
-		weight: 500,
+		weight: "regular",
 		fill: fg,
 	)
+
 	set par(
 		justify: true,
 	)
