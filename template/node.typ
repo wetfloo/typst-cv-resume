@@ -38,21 +38,56 @@
 
 #let invisible-text(
 	bg: none,
+	fg: none,
 	debug: false,
 	content,
 ) = {
-	let style = if debug {
-		text.with(
-			fill: red,
-		)
+	if debug {
+		set text(fill: fg)
+
+		content
 	} else {
-		text.with(
-			fill: bg,
+		set text(
 			size: 1pt,
+			fill: bg,
 		)
+
+		content
 	}
+}
 
-	show: style
+#let invisible-paragraph(
+	bg: none,
+	fg: none,
+	debug: false,
+	content,
+) = {
+	if debug {
+		set text(fill: fg)
 
-	content
+		content
+	} else {
+		block(
+			width: 100%,
+			above: 0pt,
+			// commenting this argument out to make sure invisible
+			// paragraph doesn't collapse paragraphs following it
+			//
+			// below: 0pt,
+			inset: 0pt,
+		)[
+			#set text(
+				size: 1pt,
+				fill: bg,
+				hyphenate: false,
+			)
+			#set par(
+				leading: 0pt,
+				spacing: 0pt,
+				justify: false,
+			)
+
+			#content
+		]
+	}
 }

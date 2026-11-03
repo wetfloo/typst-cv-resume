@@ -16,14 +16,22 @@
 		bg: bg,
 		fg: fg,
 	)
+
 	let invisible-text = invisible-text.with(
 		bg: bg,
+		fg: red,
+		debug: debug,
+	)
+	let invisible-paragraph = invisible-paragraph.with(
+		bg: bg,
+		fg: red,
 		debug: debug,
 	)
 
 	return (
 		contact-items: contact-items,
 		invisible-text: invisible-text,
+		invisible-paragraph: invisible-paragraph,
 		template: template,
 	)
 }
