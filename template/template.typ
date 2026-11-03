@@ -22,23 +22,32 @@
 		fill: fg,
 	)
 
+	let lvl-1-heading-counter = counter("lvl-1-heading")
 	show heading
 		.where(level: 1): content => {
-			set align(center)
-			set text(
-				font: "Publico Headline",
-				size: 20pt,
-				style: "normal",
-				weight: "bold",
-			)
-			set block(
-				spacing: 1.3em,
-				inset: (
-					top: 1pt,
-				),
-			)
+			lvl-1-heading-counter.step()
 
-			content
+			context {
+				set align(center)
+				set text(
+					font: "Publico Headline",
+					size: 20pt,
+					style: "normal",
+					weight: "bold",
+				)
+				set block(
+					spacing: 1.3em,
+					inset: block.inset + (
+						top: if lvl-1-heading-counter.get().first() <= 1 {
+							0pt
+						} else {
+							1pt
+						},
+					),
+				)
+
+				content
+			}
 		}
 
 	show heading
