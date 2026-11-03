@@ -1,8 +1,6 @@
-#let contact-items(
-	separator: " :: ",
+#let generic-top-item(
 	align-direction: right,
-	link-underline: true,
-	..pairs,
+	content,
 ) = {
 	set text(
 		font: "Avenir Next",
@@ -10,30 +8,43 @@
 		style: "normal",
 		weight: "regular",
 	)
-
 	set align(align-direction)
 
-	let link-style = if link-underline {
-		underline
-	} else {
-		text
-	}
-	show link: link-style
+	content
+}
 
-	pairs
-		.pos()
-		.map(
-			item => {
-				let url = item.at("url", default: none)
-				let text = item.at("text", default: none)
-
-				assert(url != none and url.len() > 0)
-				assert(text != none and text.len() > 0)
-
-				link(url)[#item.text]
+#let contact-items(
+	separator: " :: ",
+	align-direction: right,
+	link-underline: true,
+	..pairs,
+) = {
+	generic-top-item(
+		align-direction: align-direction,
+		{
+			let link-style = if link-underline {
+				underline
+			} else {
+				text
 			}
-		)
-		.join(separator)
+			show link: link-style
+
+			pairs
+			.pos()
+			.map(
+				item => {
+					let url = item.at("url", default: none)
+					let text = item.at("text", default: none)
+
+					assert(url != none and url.len() > 0)
+					assert(text != none and text.len() > 0)
+
+					link(url)[#item.text]
+				}
+			)
+			.join(separator)
+		}
+	)
 }
 
 #let invisible-text(

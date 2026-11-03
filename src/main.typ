@@ -6,6 +6,7 @@
 )
 
 #let (
+	generic-top-item,
 	contact-items,
 	invisible-text,
 	invisible-paragraph,

@@ -29,6 +29,7 @@
 	)
 
 	return (
+		generic-top-item: generic-top-item,
 		contact-items: contact-items,
 		invisible-text: invisible-text,
 		invisible-paragraph: invisible-paragraph,
