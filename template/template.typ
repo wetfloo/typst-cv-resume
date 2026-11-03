@@ -57,9 +57,14 @@
 			upper(content)
 		}
 
-	set par(
-		justify: true,
-	)
+	show: content => context {
+		set par(
+			justify: true,
+			spacing: par.spacing + 3pt,
+		)
+
+		content
+	}
 
 	content
 }
