@@ -31,6 +31,12 @@
 				style: "normal",
 				weight: "bold",
 			)
+			set block(
+				spacing: 1.3em,
+				inset: (
+					top: 1pt,
+				),
+			)
 
 			content
 		}
@@ -43,6 +49,9 @@
 				size: 11pt,
 				style: "normal",
 				weight: "semibold",
+			)
+			set block(
+				spacing: 1.2em,
 			)
 
 			upper(content)
