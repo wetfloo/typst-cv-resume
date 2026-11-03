@@ -20,6 +20,7 @@
 		style: "normal",
 		weight: "regular",
 		fill: fg,
+		hyphenate: false,
 	)
 
 	show link: underline
