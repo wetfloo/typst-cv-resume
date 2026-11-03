@@ -52,7 +52,7 @@
 			fill: bg,
 		)
 
-		content
+		box(place[#content])
 	}
 }
 
