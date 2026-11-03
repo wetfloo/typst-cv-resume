@@ -23,7 +23,7 @@
 
 	return (
 		contact-items: contact-items,
-		template: template,
 		invisible-text: invisible-text,
+		template: template,
 	)
 }
