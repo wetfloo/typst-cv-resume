@@ -22,6 +22,19 @@
 		fill: fg,
 	)
 
+	show heading
+		.where(level: 1): content => [
+			#set align(center)
+			#set text(
+				font: "Publico Headline",
+				size: 20pt,
+				style: "normal",
+				weight: "bold",
+			)
+
+			#content
+		]
+
 	set par(
 		justify: true,
 	)
