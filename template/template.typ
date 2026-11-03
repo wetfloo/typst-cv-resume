@@ -35,6 +35,19 @@
 			#content
 		]
 
+	show heading
+		.where(level: 2): content => [
+			#set align(start)
+			#set text(
+				font: "Avenir Next",
+				size: 11pt,
+				style: "normal",
+				weight: "semibold",
+			)
+
+			#upper(content)
+		]
+
 	set par(
 		justify: true,
 	)

@@ -13,5 +13,6 @@
 )
 
 = this is a header text
+== this is a lower level header text
 
 this is some content with #entrypoint.at("invisible-text")()[invisible text]
