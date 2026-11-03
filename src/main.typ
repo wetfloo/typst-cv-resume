@@ -22,7 +22,7 @@
 = this is a header text
 == this is a lower level header text
 
-this is some content with #invisible-text[invisible texh] and some other text on top of that
+this is some content with #invisible-text[invisible text] and some other text on top of that
 
 #invisible-paragraph[invisible text shouldn't be able to take up much space otherwise]
 
