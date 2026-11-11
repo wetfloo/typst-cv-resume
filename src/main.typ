@@ -1,4 +1,4 @@
-#import "../template/entrypoint.typ": entrypoint as cv-template-entrypoint
+#import "../layer/base/entrypoint.typ": entrypoint as cv-template-entrypoint
 
 #let entrypoint = cv-template-entrypoint(
 	dark-mode: true,
