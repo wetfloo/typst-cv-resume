@@ -1,9 +1,4 @@
-#import "../layer/base/entrypoint.typ": entrypoint as cv-template-entrypoint
-
-#let entrypoint = cv-template-entrypoint(
-	dark-mode: true,
-	debug: true,
-)
+#import "@local/cv:0.0.1": entrypoint
 
 #let (
 	generic-top-item,
@@ -11,14 +6,19 @@
 	invisible-text,
 	invisible-paragraph,
 	template,
-) = entrypoint
+) = entrypoint(
+	dark-mode: true,
+	debug: true,
+)
 
 #show: template
 
 #contact-items(
 	(text: "GitHub", url: "https://github.com/wetfloo"),
-	(text: "Modworkshop", url: "https://modworkshop.net/user/inertia"),
+	(text: "Example", url: "https://example.com"),
 )
+
+#generic-top-item[GMT+0]
 
 = this is a header text
 == this is a lower level header text
